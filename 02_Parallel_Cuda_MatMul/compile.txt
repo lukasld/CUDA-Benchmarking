@@ -1,0 +1,1 @@
+/usr/local/cuda-11.1/bin/nvcc  --shared --compiler-options '-fPIC' -o Sequential_Cuda_Python.so Sequential_Cuda_Python.cu

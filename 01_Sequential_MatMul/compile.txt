@@ -1,0 +1,1 @@
+gcc sequential_matmul_c.c -shared -o sequential_matmul_c.so
