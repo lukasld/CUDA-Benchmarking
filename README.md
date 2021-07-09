@@ -1,1 +1,1 @@
-##CUDA-Benchmarking
+# CUDA-Benchmarking
