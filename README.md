@@ -13,10 +13,16 @@ The following techniques are compared against each other:
 
 ## Method ##
 Two matrices `A` of incresing size (`m - 2^5 to 2^16`, `n - 2^4 to 2^15`) as well as `B`, the transposed matrix of same size as `A`are multiplied with one another.
-If the calculation is > `0.05 seconds` the method is being disqualified.
+If the calculation is > `0.05 seconds` the method is being disqualified. Random floats (32bit) were used for testing.
 
 
 ## Results ##
+
+Here the relative differences between Method and stepsize: <br>
+As you can see my sequential `C` implementation disqualified pretty quickly as the matrices grow exponential in size. <br>
+Numpy is extremely optimized and methods are called from `C` and it disqualifies at a `2^12` where it is 3853x slower than the fastes method - `CudaBlas`<br>
+Interestingly, the `CUDA -shared mem` implementation holds up pretty well against `CUDA Blas` and is only about `6x` (results are rounded) slower.<br>
+Also interesting - which needs further investigation is how slow `Cuda shared mem` and `Cuda blas` is at smaller matrices. My assumption is the introduced latency of loading the data onto the GPU or the thread-block size of `16*16 threads` causes some issues. This needs further investigation however. 
 <img src="https://i.ibb.co/FgyG522/cross-comparison.jpg" width="500"/>
 
 
