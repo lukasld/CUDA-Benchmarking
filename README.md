@@ -16,7 +16,10 @@ Two matrices `A` of incresing size (`m - 2^5 to 2^16`, `n - 2^4 to 2^15`) as wel
 If the calculation is > `0.05 seconds` the method is being disqualified.
 
 
-##Results##
+## Results ##
+<img src="https://i.ibb.co/JpGCVV6/cross-comparison.png
+" width="500"/>
+
 
 
 ###Todo###
