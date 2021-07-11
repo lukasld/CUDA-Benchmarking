@@ -27,7 +27,7 @@ Also interesting - which needs further investigation is how slow `Cuda shared me
 
 
 
-###Todo###
+### Todo ###
 - why is cuda lagging on lower matrix sizes?
 - testing on Jetson Nano device
 - can we improve the speed though increasing the thread-block size?
