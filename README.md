@@ -17,7 +17,7 @@ If the calculation is > `0.05 seconds` the method is being disqualified.
 
 
 ## Results ##
-<img src="https://i.ibb.co/JpGCVV6/cross-comparison.png" width="500"/>
+<img src="https://i.ibb.co/FgyG522/cross-comparison.jpg" width="500"/>
 
 
 
