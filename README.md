@@ -22,7 +22,7 @@ Here the relative differences between Method and stepsize: <br>
 As you can see my sequential `C` implementation disqualified pretty quickly as the matrices grow exponential in size. <br>
 Numpy is extremely optimized and methods are called from `C` and it disqualifies at a `2^12` where it is 3853x slower than the fastes method - `CudaBlas`<br>
 Interestingly, the `CUDA -shared mem` implementation holds up pretty well against `CUDA Blas` and is only about `6x` (results are rounded) slower.<br>
-Also interesting - which needs further investigation is how slow `Cuda shared mem` and `Cuda blas` is at smaller matrices. My assumption is the introduced latency of loading the data onto the GPU or the thread-block size of `16*16 threads` causes some issues. This needs further investigation however. 
+Also interesting - which needs further investigation is how slow `Cuda shared mem` and `Cuda blas` is at smaller matrices. My assumption is the introduced latency of loading the data onto the GPU or the thread-block size of `16*16 threads` causes some issues. This needs further investigation however. <br>
 <img src="https://i.ibb.co/FgyG522/cross-comparison.jpg" width="500"/>
 
 
