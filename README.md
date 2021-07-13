@@ -28,7 +28,7 @@ Also interesting - which needs further investigation is how slow `Cuda shared me
 
 
 ### Todo ###
-- why is cuda lagging on lower matrix sizes?
+- why is cuda lagging on smaller matrix sizes?
 - testing on Jetson Nano device
 - can we improve the speed though increasing the thread-block size?
 - what role play the VRAM sizes Jetson Nano (2GB) vs. 1080Ti(11GB)?
