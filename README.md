@@ -9,7 +9,7 @@ The following techniques are compared against each other:
 - numpy (calls optimized C library)
 - c sequential (my sequential c implementation)
 - Cuda Shared Memory approach (smaller blocks are stored in faster L1-cache and calculated one after the other)
-- CudaBlas (used by modern ML libraries such as `Pytorch` and `Tensorflow`)
+- CudaBlas (used by modern ML frameworks such as `Pytorch` and `Tensorflow`)
 
 ## Method ##
 Two matrices `A` of incresing size (`m - 2^5 to 2^16`, `n - 2^4 to 2^15`) as well as `B`, the transposed matrix of same size as `A`are multiplied with one another.
